@@ -9,9 +9,9 @@ class ElectronicGadgets {
         Product p = new Product();
         Payment pay = new Payment();
         Scanner sc = new Scanner(System.in);
-        int choice2 = sc.nextInt();
+        int choice = sc.nextInt();
 
-        if (choice2 == 1) {
+        if (choice == 1) {
             p.ProductName = "MacBook Pro";
             p.Colour="Silver";
             p.processor="M1 Max";
@@ -21,7 +21,7 @@ class ElectronicGadgets {
             pay.payment();
         }
 
-        if (choice2 == 2) {
+        if (choice == 2) {
             p.ProductName = "iPhone 13 Pro";
             p.Colour="Black";
             p.processor="A15 Bionic";
@@ -30,7 +30,7 @@ class ElectronicGadgets {
             pay.payment();
         }
 
-        if (choice2 == 3) {
+        if (choice == 3) {
             p.ProductName = "iPad Pro";
             p.Colour="Silver";
             p.processor="M1";
@@ -39,7 +39,7 @@ class ElectronicGadgets {
             pay.payment();
         }
 
-        if (choice2 == 4) {
+        if (choice == 4) {
             p.ProductName = "Apple Watch 7";
             p.Colour="Black";
             p.processor="S7";

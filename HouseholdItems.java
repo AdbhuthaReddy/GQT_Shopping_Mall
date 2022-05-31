@@ -10,9 +10,9 @@ public class HouseholdItems {
         Product p = new Product();
         Payment pay = new Payment();
         Scanner sc = new Scanner(System.in);
-        int choice2 = sc.nextInt();
+        int choice = sc.nextInt();
 
-        if (choice2 == 1) {
+        if (choice == 1) {
             p.ProductName = "Air Conditioner";
             p.Colour = "White";
             p.Capacity = "2 Ton";
@@ -23,7 +23,7 @@ public class HouseholdItems {
             pay.payment();
         }
 
-        if (choice2 == 2) {
+        if (choice == 2) {
             p.ProductName = "Refrigerator";
             p.Colour = "Grey";
             p.Capacity = "415 litres";
@@ -34,7 +34,7 @@ public class HouseholdItems {
             pay.payment();
         }
 
-        if (choice2 == 3) {
+        if (choice == 3) {
             p.ProductName = "Washing Machine";
             p.Colour = "Black";
             p.Capacity = "10 KG";
@@ -45,7 +45,7 @@ public class HouseholdItems {
             pay.payment();
         }
 
-        if (choice2 == 4) {
+        if (choice == 4) {
             p.ProductName = "Geyser";
             p.Colour = "White";
             p.Capacity = "25 litres";

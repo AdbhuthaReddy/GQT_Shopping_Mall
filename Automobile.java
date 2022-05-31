@@ -9,9 +9,9 @@ class Automobile {
         Product p = new Product();
         Payment pay = new Payment();
         Scanner sc = new Scanner(System.in);
-        int choice2 = sc.nextInt();
+        int choice = sc.nextInt();
 
-        if (choice2 == 1) {
+        if (choice == 1) {
             p.ProductName = "Volvo XC90";
             p.Colour="Black";
             p.TopSpeed="200KM/h";
@@ -23,7 +23,7 @@ class Automobile {
             pay.payment();
         }
 
-        if (choice2 == 2) {
+        if (choice == 2) {
             p.ProductName = "Lamborghini Urus";
             p.Colour="White";
             p.TopSpeed="300KM/h";
@@ -35,7 +35,7 @@ class Automobile {
             pay.payment();
         }
 
-        if (choice2 == 3) {
+        if (choice == 3) {
             p.ProductName = "Dodge Demon";
             p.Colour="Black";
             p.TopSpeed="250KM/h";
@@ -47,7 +47,7 @@ class Automobile {
             pay.payment();
         }
 
-        if (choice2 == 4) {
+        if (choice == 4) {
             p.ProductName = "Ford Endeavour";
             p.Colour="Black";
             p.TopSpeed="200KM/h";
@@ -59,7 +59,7 @@ class Automobile {
             pay.payment();
         }
 
-        if (choice2 == 5) {
+        if (choice == 5) {
             p.ProductName = "Mahindra Thar";
             p.Colour="Black";
             p.TopSpeed="180KM/h";
