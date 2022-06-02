@@ -12,60 +12,60 @@ class Automobile {
         int choice = sc.nextInt();
 
         if (choice == 1) {
-            p.ProductName = "Volvo XC90";
-            p.Colour="Black";
-            p.TopSpeed="200KM/h";
-            p.Transmission="Automatic";
-            p.Type="Estate";
-            p.Price = 15000000;
+            p.ProductName += "Volvo XC90";
+            p.Colour +="Black";
+            p.TopSpeed +="200KM/h";
+            p.Transmission += "Automatic";
+            p.Type += "Estate";
+            p.Price += "15000000";
             System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.TopSpeed+'\n'+p.Transmission+'\n'+p.Type+'\n'+p.Price);
 
             pay.payment();
         }
 
         if (choice == 2) {
-            p.ProductName = "Lamborghini Urus";
-            p.Colour="White";
-            p.TopSpeed="300KM/h";
-            p.Transmission="Automatic";
-            p.Type="SUV";
-            p.Price = 35000000;
+            p.ProductName += "Lamborghini Urus";
+            p.Colour +="White";
+            p.TopSpeed +="300KM/h";
+            p.Transmission +="Automatic";
+            p.Type +="SUV";
+            p.Price += "35000000";
             System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.TopSpeed+'\n'+p.Transmission+'\n'+p.Type+'\n'+p.Price);
 
             pay.payment();
         }
 
         if (choice == 3) {
-            p.ProductName = "Dodge Demon";
-            p.Colour="Black";
-            p.TopSpeed="250KM/h";
-            p.Transmission="Automatic";
-            p.Type="Muscle Car";
-            p.Price = 10000000;
+            p.ProductName += "Dodge Demon";
+            p.Colour +="Black";
+            p.TopSpeed +="250KM/h";
+            p.Transmission +="Automatic";
+            p.Type +="Muscle Car";
+            p.Price += "10000000";
             System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.TopSpeed+'\n'+p.Transmission+'\n'+p.Type+'\n'+p.Price);
 
             pay.payment();
         }
 
         if (choice == 4) {
-            p.ProductName = "Ford Endeavour";
-            p.Colour="Black";
-            p.TopSpeed="200KM/h";
-            p.Transmission="Automatic";
-            p.Type="SUV";
-            p.Price = 5000000;
+            p.ProductName += "Ford Endeavour";
+            p.Colour +="Black";
+            p.TopSpeed +="200KM/h";
+            p.Transmission +="Automatic";
+            p.Type +="SUV";
+            p.Price += "5000000";
             System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.TopSpeed+'\n'+p.Transmission+'\n'+p.Type+'\n'+p.Price);
 
             pay.payment();
         }
 
         if (choice == 5) {
-            p.ProductName = "Mahindra Thar";
-            p.Colour="Black";
-            p.TopSpeed="180KM/h";
-            p.Transmission="Automatic";
-            p.Type="Off Roader";
-            p.Price = 1500000;
+            p.ProductName += "Mahindra Thar";
+            p.Colour +="Black";
+            p.TopSpeed +="180KM/h";
+            p.Transmission +="Automatic";
+            p.Type +="Off Roader";
+            p.Price += "1500000";
             System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.TopSpeed+'\n'+p.Transmission+'\n'+p.Type+'\n'+p.Price);
 
             pay.payment();

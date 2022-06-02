@@ -4,10 +4,32 @@ public class MyClass {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        Choice c = new Choice();
         System.out.println("welcome to GQT Shopping mall");
+        c.choice();
+
+        while (true) {
+            System.out.print("Continue Shopping?  y/n: ");
+            String sh = sc.next();
+
+            if (sh.equalsIgnoreCase("y")) {
+                c.choice();
+            } else if (sh.equalsIgnoreCase("n")) {
+                System.out.println("Thank you for shopping at GQT");
+                break;
+            } else {
+                System.out.println("Choose the right option.");
+            }
+        }
+    }
+}
+
+class Choice {
+    void choice() {
         System.out.println("Available product categories are :");
         System.out.println("1.Automobile Accessories    2.Electronic Gadgets    3.Clothing    4.Household items");
         System.out.print("Enter your choice: ");
+        Scanner sc = new Scanner(System.in);
 
         int Choice1 = sc.nextInt();
 
@@ -30,17 +52,17 @@ public class MyClass {
     }
 }
 
-
 class Product{
-        String ProductName ;
-        String Colour ;
-        String TopSpeed ;
-        String Transmission;
-        String Type;
-        String processor;
-        String Material;
-        String Capacity;
-        int Price;
+        String ProductName = "Product Name: ";
+        String Colour = "Colour: ";
+        String TopSpeed = "Top Speed: ";
+        String Transmission = "Transmission: ";
+        String Type = "Type: ";
+        String processor = "Processor: ";
+        String Material = "Material: ";
+        String Capacity = "Capacity: ";
+        String Price = "₹";
+        String Brand = "Brand: ";
 }
 class Payment {
     void payment() {
@@ -50,6 +72,10 @@ class Payment {
             if (empty.equalsIgnoreCase("pay")) {
                 System.out.println("Item Purchased");
             }
+            else{
+                System.out.println("Payment cancelled !!!");
+            }
+
     }
 }
 

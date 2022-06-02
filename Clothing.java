@@ -12,41 +12,47 @@ public class Clothing {
         int choice = sc.nextInt();
 
         if (choice == 1) {
-            p.ProductName = "Jumpers";
-            p.Colour="Pink";
-            p.Material ="cotton";
-            p.Price = 500;
-            System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
+            p.ProductName += "Jumper";
+            p.Brand += "Zara";
+            p.Type += "Slim Fit";
+            p.Colour +="Pink";
+            p.Material +="cotton";
+            p.Price += "2799";
+            System.out.println(p.ProductName+'\n'+p.Brand+'\n'+p.Type+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
 
             pay.payment();
         }
 
         if (choice == 2) {
-            p.ProductName = "Jeans";
-            p.Colour="blue";
-            p.Material ="cotton";
-            p.Price = 900;
-            System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
-
+            p.ProductName += "Jeans";
+            p.Brand += "Soul Of Nomad";
+            p.Type += "Slim Fit";
+            p.Colour +="blue";
+            p.Material +="cotton";
+            p.Price += "35000";
+            System.out.println(p.ProductName+'\n'+p.Brand+'\n'+p.Type+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
             pay.payment();
         }
 
         if (choice == 3) {
-            p.ProductName = "Shirts";
-            p.Colour="White";
-            p.Material ="Silk";
-            p.Price = 1000;
-            System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
-
+            p.ProductName += "Shirt";
+            p.Brand += "Brook Brothers";
+            p.Type += "Slim Fit";
+            p.Colour +="White";
+            p.Material +="Silk";
+            p.Price += "15000";
+            System.out.println(p.ProductName+'\n'+p.Brand+'\n'+p.Type+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
             pay.payment();
         }
 
         if (choice == 4) {
-            p.ProductName = "Trousers";
-            p.Colour="Grey";
-            p.Material ="cotton blend";
-            p.Price = 750;
-            System.out.println(p.ProductName+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
+            p.ProductName += "Trouser";
+            p.Brand += "Ermenegildo zegna";
+            p.Type += "Flat Front";
+            p.Colour +="Grey";
+            p.Material +="cotton blend";
+            p.Price += "75000";
+            System.out.println(p.ProductName+'\n'+p.Brand+'\n'+p.Type+'\n'+p.Colour+'\n'+p.Material+'\n'+p.Price);
 
             pay.payment();
         }
