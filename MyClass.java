@@ -61,7 +61,7 @@ class Product{
         String processor = "Processor: ";
         String Material = "Material: ";
         String Capacity = "Capacity: ";
-        String Price = "₹";
+        String Price = "MRP :₹";
         String Brand = "Brand: ";
 }
 class Payment {
@@ -70,10 +70,41 @@ class Payment {
         System.out.println("Type Pay & Press Enter to pay");
         String empty = sc.next();
             if (empty.equalsIgnoreCase("pay")) {
-                System.out.println("Item Purchased");
+                System.out.println("Choose the mode of payment: " +'\n' +"1. Credit/Debit Card" + '\n' + "2. UPI" + '\n' + "3. Net Banking" + '\n'+ "4. Cash on Delivery");
+                int pay = sc.nextInt();
+                if(pay==1){
+                    System.out.print("Enter Card Number: ");
+                    int cardnum = sc.nextInt();
+                    System.out.print("Enter Expiry Date: ");
+                    int exdate = sc.nextInt();
+                    System.out.print("Enter CVV: ");
+                    int cvv = sc.nextInt();
+                    System.out.println("Payment Successful.");
+                }
+                else if(pay==2){
+                    System.out.print("Enter your UPI ID:");
+                    String upiid = sc.next();
+                    System.out.println("Payment Successful.");
+                }
+                else if(pay==3) {
+                    System.out.print("Enter the name of the Bank: ");
+                    String bank = sc.next();
+                    System.out.print("Enter User ID: ");
+                    String userid = sc.next();
+                    System.out.print("Enter Password: ");
+                    String pass = sc.next();
+                    System.out.println("Payment Successful.");
+                }
+                else if(pay==4){
+                    System.out.println("You can pay on product arrival!!!");
+                }
+                else{
+                    System.out.println("Payment cancelled !!! 😥 ");
+                }
+                System.out.println("Thank you for shopping at GQT... 😉");
             }
             else{
-                System.out.println("Payment cancelled !!!");
+                System.out.println("Payment cancelled !!! 😥 ");
             }
 
     }
